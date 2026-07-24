@@ -1072,3 +1072,47 @@ html, body{
   display:block;
   object-fit:cover;
 }
+/* ===== FINAL IMAGE FIX ===== */
+
+/* HEADER LOGO - force small size */
+.nav .brand .brand-logo{
+  width:46px !important;
+  height:46px !important;
+  min-width:46px !important;
+  max-width:46px !important;
+  min-height:46px !important;
+  max-height:46px !important;
+  object-fit:cover !important;
+  border-radius:50% !important;
+  position:static !important;
+  display:block !important;
+  flex:0 0 46px !important;
+}
+
+.nav .brand{
+  display:flex !important;
+  align-items:center !important;
+  gap:10px !important;
+}
+
+/* REPAIR PHOTO - keep strictly inside box */
+.feature-photo{
+  position:relative !important;
+  width:100% !important;
+  overflow:hidden !important;
+  border-radius:20px !important;
+  padding:0 !important;
+}
+
+.feature-photo img{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:100% !important;
+  object-fit:cover !important;
+  object-position:center !important;
+  display:block !important;
+  border-radius:inherit !important;
+  margin:0 !important;
+}
