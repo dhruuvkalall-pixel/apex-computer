@@ -924,3 +924,91 @@ footer{
     aspect-ratio:4 / 3;
   }
 }
+/* ===== MOBILE ALIGNMENT + HEADER FIX ===== */
+
+html, body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+/* Full width fixed header */
+.nav{
+  position:sticky;
+  top:0;
+  left:0;
+  right:0;
+  width:100%;
+  max-width:none;
+  box-sizing:border-box;
+  z-index:9999;
+  background:#fff;
+}
+
+/* Keep header content balanced */
+.nav .brand{
+  margin-left:0;
+}
+
+.nav .menu{
+  margin-left:auto;
+}
+
+/* Fix all main sections alignment */
+.section,
+.reviews{
+  width:100%;
+  max-width:100%;
+  box-sizing:border-box;
+}
+
+/* Gallery centered properly */
+.gallery{
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  box-sizing:border-box;
+}
+
+.gallery-grid{
+  width:100%;
+  box-sizing:border-box;
+}
+
+/* Contact section full width */
+.contact{
+  width:100%;
+  max-width:none;
+  margin-left:0;
+  margin-right:0;
+  box-sizing:border-box;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+  .nav{
+    padding-left:28px;
+    padding-right:28px;
+  }
+
+  .section{
+    padding-left:28px;
+    padding-right:28px;
+  }
+
+  .reviews{
+    padding-left:28px;
+    padding-right:28px;
+  }
+
+  .contact{
+    padding-left:28px;
+    padding-right:28px;
+  }
+
+  .gallery-grid{
+    margin-left:0;
+    margin-right:0;
+  }
+}
