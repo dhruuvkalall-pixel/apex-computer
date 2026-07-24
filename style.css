@@ -1012,3 +1012,38 @@ html, body{
     margin-right:0;
   }
 }
+/* FIX GALLERY HORIZONTAL OVERFLOW */
+
+.gallery{
+  overflow:hidden;
+}
+
+.gallery-grid{
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  box-sizing:border-box;
+}
+
+.gallery-grid figure{
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  box-sizing:border-box;
+}
+
+.gallery-grid img{
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  display:block;
+  object-fit:cover;
+}
+
+@media(max-width:700px){
+  .gallery-grid{
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    gap:10px;
+  }
+}
